@@ -67,10 +67,10 @@ p {
 .address {
     display: flex;
     flex-direction: column;
-    line-height: 24.3px;
-    
+    line-height: 24.3px; 
 }
 
+/*в макете указана граница (border) хотя мне показалось что проще сделать подчеркивание, в общем есть сомнения*/
 .header__address-link {
     border-bottom: 1px solid #000;
 }
@@ -86,7 +86,7 @@ p {
     text-transform: uppercase;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
-		background-position: center;
+	background-position: center;
     background-size: cover;
 }
 
@@ -192,12 +192,12 @@ p {
     position: relative;
 }
 
-.card { 
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 51px 40px 48px;    
+    padding: 51px 40px 48px;
 }
 
 .card__text {
@@ -229,13 +229,13 @@ p {
     background-image: url(../images/card-lot-03.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;   
+    background-size: cover;
 } 
 
 .lots__look-more-link {
     display: block;
     margin-top: 30px;
-		margin-left: 30px;
+	margin-left: 30px;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -287,7 +287,7 @@ p {
     height: 98px;
     margin: auto;
     margin-bottom: 88px;
-		font-size: 18px;
+	font-size: 18px;
 }
 
 .footer__menu-list {
