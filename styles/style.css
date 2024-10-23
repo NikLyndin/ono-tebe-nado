@@ -67,7 +67,7 @@ p {
 .address {
     display: flex;
     flex-direction: column;
-    line-height: 24.3px; 
+    line-height: 24.3px;
 }
 
 /*в макете указана граница (border) хотя мне показалось что проще сделать подчеркивание, в общем есть сомнения*/
