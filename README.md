@@ -1,1 +1,1 @@
-https://github.com/NikLyndin/ono-tebe-nado-1
+https://github.com/NikLyndin/ono-tebe-nado
