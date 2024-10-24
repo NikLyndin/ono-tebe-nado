@@ -6,12 +6,12 @@ address {
     font-style: normal;
 }
 
-h3 {
+h2 {
 		font-size: 40px;
     text-transform: uppercase;
 }
 
-h4 {
+h3 {
     font-size: 22px;
     text-decoration: underline;
     text-transform: uppercase;
@@ -30,7 +30,7 @@ p {
 .header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
-    max-height: 105px;
+    height: 105px;
     margin-top: 92px;
     margin-bottom: 96px;
     font-size: 18px;
@@ -47,7 +47,7 @@ p {
 
 .header__links-list-item {
     margin-left: 32px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
     list-style-type: circle;
 }
 
@@ -68,11 +68,13 @@ p {
     display: flex;
     flex-direction: column;
     line-height: 24.3px;
+		font-size: 18px;
 }
 
 /*в макете указана граница (border) хотя мне показалось что проще сделать подчеркивание, в общем есть сомнения*/
-.header__address-link {
-    border-bottom: 1px solid #000;
+.address-link {
+		font-size: 18px;
+    border-bottom: 1px solid currentColor;
 }
 
 .header__address {
@@ -86,15 +88,16 @@ p {
     text-transform: uppercase;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
-	background-position: center;
+		background-position: center;
     background-size: cover;
 }
 
 .overlay {
     position: absolute;
+		inset: 0;
     width: 100%;
     height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -104,7 +107,7 @@ p {
     justify-content: end;
     gap: 20px;
     width: 1000px;
-    height: 520px;
+		padding-top: 165px;
     margin: auto;
     font-size: 100px;
     letter-spacing: 0.3em;
@@ -116,7 +119,7 @@ p {
 }
 
 .aligned-text_center {
-    padding-left: 286px;
+    align-self: center;
     line-height: 100px;
 }
 
@@ -137,9 +140,9 @@ p {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 237px;
     font-weight: normal;
     font-size: 22px;
+		padding-bottom: 51px;
 }
 
 .cover__description-text {
@@ -156,12 +159,13 @@ p {
     height: 51px;
     margin-top: 135px;
     margin-right: 50px;
-    border: 1px solid #fff;
+    border: 1px solid currentColor;
     color: #fff;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
     background-color: transparent;
+		font-family: 'Raleway', sans-serif;
 }
 
 .lots {
@@ -185,7 +189,7 @@ p {
 
 .lots__card-list-item {
     max-width: 334px;
-    height: 563px;
+    min-height: 563px;
 }
 
 .card-link {
@@ -198,6 +202,9 @@ p {
     justify-content: space-between;
     height: 100%;
     padding: 51px 40px 48px;
+		background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .card__text {
@@ -213,29 +220,20 @@ p {
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 } 
 
 .lots__look-more-link {
     display: block;
     margin-top: 30px;
-	margin-left: 30px;
+		margin-left: 40px;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -276,31 +274,36 @@ p {
     margin-bottom: 100px;
 }
 
-.first__paragraph {
+.top__paragraph {
     margin-bottom: 24px;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 149px 1fr;
     width: 1000px;
-    height: 98px;
     margin: auto;
     margin-bottom: 88px;
-	font-size: 18px;
 }
 
 .footer__menu-list {
-    text-align: center;
+		text-align: center;
     list-style: none;
 }
 
 .footer__menu-link {
-    border-bottom: 1px solid #000;
+		font-size: 18px;
+    border-bottom: 1px solid currentColor;
+}
+
+.activ-link {
+	border-bottom: none;
 }
 
 .footer__social-list {
+
     display: flex;
+		justify-content: flex-end;
     gap: 48px;
     list-style: none;
 }
